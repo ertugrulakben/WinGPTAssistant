@@ -24,7 +24,7 @@ def get_real_time_info():
     """
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     current_day = datetime.now().strftime("%A")
-    city = "Manavgat"
+    city = "YOUR-CITY" # Place your
     weather_url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={weather_api_key}&units=metric"
     weather_response = requests.get(weather_url)
     weather_data = weather_response.json()
@@ -56,14 +56,10 @@ def chatgpt_prompt(prompt, include_real_time_info=False):
                 {
                     "role": "system",
                     "content": (
-                        "You are an assistant named Jarvis. You will primarily communicate in English. "
+                        "You are an assistant named XXXX. You will primarily communicate in English. " # Place your NAME
                         "You have information about the user: "
-                        "The user is Ertuğrul Akben, born on April 22, 1998. "
-                        "He is from Manavgat, but his hometown is Kahramanmaraş. "
-                        "Ertuğrul Akben is skilled in graphic design, web design, SEO-SEM optimization, "
                         "social media consultancy, and advertising. He has received various awards and certifications "
                         "in the field of advertising and digital marketing. "
-                        "Always address him as 'Ertuğrul abi'. When asked to correct or write something, do so directly and efficiently without unnecessary formalities."
                     )
                 },
                 {"role": "user", "content": full_prompt}
