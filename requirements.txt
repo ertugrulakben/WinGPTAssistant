@@ -1,0 +1,7 @@
+
+openai
+pyperclip
+logging
+pyautogui
+requests
+webbrowser
