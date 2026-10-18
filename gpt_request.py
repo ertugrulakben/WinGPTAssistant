@@ -10,7 +10,7 @@ import webbrowser
 from googlesearch import search
 
 # Logging configuration
-log_file_path = os.path.expanduser('C:/Users/your-username/jarvis/gpt_request.log')
+log_file_path = os.path.expanduser('C:/Users/your-username/artur/gpt_request.log')
 logging.basicConfig(filename=log_file_path, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Place your API keys here
